@@ -28,19 +28,19 @@
         <Button Grid.Row=" 3" Grid.Column ="0" Text="7" Clicked="Numberbutton"/>
         <Button Grid.Row=" 3" Grid.Column ="1" Text="8" Clicked="Numberbutton"/>
         <Button Grid.Row=" 3" Grid.Column ="2" Text="9" Clicked="Numberbutton"/>
-        <Button Grid.Row=" 3" Grid.Column ="3" Text="x" Clicked="OperadButton"/>
+        <Button Grid.Row=" 3" Grid.Column ="3" Text="x" Clicked="OperandButton"/>
 
         <!--rad 5-->
         <Button Grid.Row=" 4" Grid.Column ="0" Text="4" Clicked="Numberbutton"/>
         <Button Grid.Row=" 4" Grid.Column ="1" Text="5" Clicked="Numberbutton"/>
         <Button Grid.Row=" 4" Grid.Column ="2" Text="6" Clicked="Numberbutton"/>
-        <Button Grid.Row=" 4" Grid.Column ="3" Text="-" Clicked="OperadButton"/>
+        <Button Grid.Row=" 4" Grid.Column ="3" Text="-" Clicked="OperandButton"/>
 
         <!--rad 6-->
         <Button Grid.Row=" 5" Grid.Column ="0" Text="1" Clicked="Numberbutton"/>
         <Button Grid.Row="5" Grid.Column ="1" Text="2" Clicked="Numberbutton"/>
         <Button Grid.Row=" 5" Grid.Column ="2" Text="3" Clicked="Numberbutton"/>
-        <Button Grid.Row=" 5" Grid.Column ="3" Text="+" Clicked="OperadButton"/>
+        <Button Grid.Row=" 5" Grid.Column ="3" Text="+" Clicked="OperandButton"/>
 
 
         <!--rad 7-->
@@ -48,7 +48,7 @@
         <Button Grid.Row=" 6" Grid.Column ="0" Text="+/-" Clicked="Numberbutton"/>
         <Button Grid.Row=" 6" Grid.Column ="1" Text="0" Clicked="Numberbutton"/>
         <Button Grid.Row=" 6" Grid.Column ="2" Text="," Clicked="Numberbutton"/>
-        <Button Grid.Row=" 6" Grid.Column ="3" Text="=" Clicked = "OperadButton" BackgroundColor="SaddleBrown"/>
+        <Button Grid.Row=" 6" Grid.Column ="3" Text="=" Clicked = "EqualButton" BackgroundColor="SaddleBrown"/>
         
        
 

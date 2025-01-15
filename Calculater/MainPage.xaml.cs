@@ -2,7 +2,10 @@
 {
     public partial class MainPage : ContentPage
     {
-        double y = 0;
+        private double accumulator = 0;
+        private string operation = "";
+        private double operand = 0;
+        
 
         public MainPage()
         {
@@ -11,25 +14,48 @@
         
         private void ClearButton(object sender, EventArgs e)
         {
-            EntryCalculater.Text = "";
-            EntryResult.Text = "";
+            
         }
         private void Numberbutton(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            EntryCalculater.Text += button.Text;
+            EntryCalculater.Text += button.Text; 
+            operation += button.Text;
         }
-        private void OperadButton(object sender, EventArgs e)
+        private void OperandButton(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            EntryResult.Text = button.Text;
+            EntryResult.Text += button.Text;
+            operation = button.Text;
+            Calculate();
         }
-        private void OperadButton2(object sender, EventArgs e)
+        private void EqualButton(object sender, EventArgs e)
         {
-            Button button = (Button)sender;
-            EntryResult.Text = button.Text;
+            Calculate();
         }
-
+        public void Calculate()
+        {
+            switch (operation)
+            {
+                case "+":
+                    accumulator += operand;
+                    break;
+                case "-":
+                    accumulator -= operand;
+                    break;
+                case "*":
+                    accumulator *= operand;
+                    break;
+                case "/":
+                    if (operand == 0)
+                    {
+                        EntryResult.Text= ("Error");
+                        return;
+                    }
+                    accumulator /= operand;
+                    break;
+                }
+            }
     }
 
 }
