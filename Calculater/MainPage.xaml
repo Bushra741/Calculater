@@ -14,21 +14,21 @@
           >
 
         <Entry BackgroundColor="White" Grid.Row=" 0" Grid.Column ="0" Grid.ColumnSpan="4" x:Name ="EntryResult"/>
-        <Entry BackgroundColor="White" Grid.Row=" 1" Grid.Column ="0" Grid.ColumnSpan="4" x:Name="EntryCalculater"/>
+        <Entry BackgroundColor="White" Grid.Row=" 1" Grid.Column ="0" Grid.ColumnSpan="4" x:Name="EntryCalculator"/>
         
         
 
         <!--rad 3-->
-        <Button Grid.Row=" 2" Grid.Column ="0" Text="%" Clicked="ClearButton"/>
-        <Button Grid.Row=" 2" Grid.Column ="1" Text="CE" Clicked="ClearButton"/>
+        <Button Grid.Row=" 2" Grid.Column ="0" Text="%" Clicked="AnotherButton"/>
+        <Button Grid.Row=" 2" Grid.Column ="1" Text="CE" Clicked="ClearCloneButton"/>
         <Button Grid.Row=" 2" Grid.Column ="2" Text="C" Clicked="ClearButton"/>
-        <Button Grid.Row=" 2" Grid.Column ="3" Text="" Clicked="ClearButton"/>
+        <Button Grid.Row=" 2" Grid.Column ="3" Text="/" Clicked="OperandButton"/>
 
         <!--rad 4-->
         <Button Grid.Row=" 3" Grid.Column ="0" Text="7" Clicked="Numberbutton"/>
         <Button Grid.Row=" 3" Grid.Column ="1" Text="8" Clicked="Numberbutton"/>
         <Button Grid.Row=" 3" Grid.Column ="2" Text="9" Clicked="Numberbutton"/>
-        <Button Grid.Row=" 3" Grid.Column ="3" Text="x" Clicked="OperandButton"/>
+        <Button Grid.Row=" 3" Grid.Column ="3" Text="*" Clicked="OperandButton"/>
 
         <!--rad 5-->
         <Button Grid.Row=" 4" Grid.Column ="0" Text="4" Clicked="Numberbutton"/>
@@ -42,10 +42,10 @@
         <Button Grid.Row=" 5" Grid.Column ="2" Text="3" Clicked="Numberbutton"/>
         <Button Grid.Row=" 5" Grid.Column ="3" Text="+" Clicked="OperandButton"/>
 
-
+        
         <!--rad 7-->
 
-        <Button Grid.Row=" 6" Grid.Column ="0" Text="+/-" Clicked="Numberbutton"/>
+        <Button Grid.Row=" 6" Grid.Column ="0" Text="+/-" Clicked="AnotherButton"/>
         <Button Grid.Row=" 6" Grid.Column ="1" Text="0" Clicked="Numberbutton"/>
         <Button Grid.Row=" 6" Grid.Column ="2" Text="," Clicked="Numberbutton"/>
         <Button Grid.Row=" 6" Grid.Column ="3" Text="=" Clicked = "EqualButton" BackgroundColor="SaddleBrown"/>
